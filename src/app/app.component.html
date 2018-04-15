@@ -1,18 +1,17 @@
 
  <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <span>Ukrainian clubs</span>
+        <span><a  href="/clubs">Ukrainian clubs</a></span>
         <span class="example-spacer"></span>
+        <a mat-button href="/about">About</a>
+        <a mat-button href="/clubs">Login</a>
+        <a mat-button href="/clubs">Logout</a>
 
-        <button mat-button>About</button>
-        <button mat-button>Contacts</button>
     </mat-toolbar-row>
 </mat-toolbar>
 <mat-card>
     <div class="container">
             <router-outlet> </router-outlet>       
     </div>
-
-        
 </mat-card>
 

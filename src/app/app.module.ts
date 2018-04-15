@@ -10,7 +10,6 @@ import { ClubsComponent } from './clubs/clubs.component';
 import { ClubComponent } from './clubs/club/club.component';
 import { ClubsListComponent } from './clubs/clubs-list/clubs-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { ContactsComponent } from './OtherComponents/contacts/contacts.component';
 import { AboutComponent } from './OtherComponents/about/about.component';
 
 
@@ -20,7 +19,6 @@ import { AboutComponent } from './OtherComponents/about/about.component';
     ClubsComponent,
     ClubComponent,
     ClubsListComponent,
-    ContactsComponent,
     AboutComponent
   ],
   imports: [
@@ -30,8 +28,8 @@ import { AboutComponent } from './OtherComponents/about/about.component';
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-      {path:'contacts', component:ContactsComponent},
       {path: '', component:ClubsComponent},
+      {path: 'clubs', component:ClubsComponent},
       {path:'about', component:AboutComponent}
     ])],
   providers: [],
