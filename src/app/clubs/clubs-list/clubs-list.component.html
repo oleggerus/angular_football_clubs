@@ -1,0 +1,16 @@
+<table class="table table-sm table-hover">
+  <tr *ngFor="let club of clubService.clubsList ">
+    <td>{{club.Name}}</td>
+    <td>{{club.City}}</td>
+    <td>{{club.Year}}</td>
+    <td>{{club.Owner}}</td>
+     <td>
+      <a class="btn" (click)="showForEdit(club)">
+        <i class="fa fa-pencil-square-o">Edit</i>
+      </a>
+      <a class="btn text-danger" (click)="onDelete(club.ClubId)">
+        <i class="fa fa-trash-o">Delete</i>
+      </a>
+    </td> 
+  </tr>
+</table>
