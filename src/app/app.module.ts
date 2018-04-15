@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
 import {HttpModule} from '@angular/http';
+import {Routes, RouterModule} from '@angular/router'
 import{MaterialModule} from './material.module';
 
 import { AppComponent } from './app.component';
@@ -27,8 +28,12 @@ import { AboutComponent } from './OtherComponents/about/about.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpModule  
-  ],
+    HttpModule,
+    RouterModule.forRoot([
+      {path:'contacts', component:ContactsComponent},
+      {path: '', component:ClubsComponent},
+      {path:'about', component:AboutComponent}
+    ])],
   providers: [],
   bootstrap: [AppComponent]
 })
