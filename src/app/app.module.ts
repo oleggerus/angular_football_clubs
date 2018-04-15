@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import { ClubsComponent } from './clubs/clubs.component';
 import { ClubComponent } from './clubs/club/club.component';
 import { ClubsListComponent } from './clubs/clubs-list/clubs-list.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ContactsComponent } from './OtherComponents/contacts/contacts.component';
+import { AboutComponent } from './OtherComponents/about/about.component';
 
 
 @NgModule({
@@ -16,14 +18,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
     AppComponent,
     ClubsComponent,
     ClubComponent,
-    ClubsListComponent
+    ClubsListComponent,
+    ContactsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpModule
+    HttpModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
