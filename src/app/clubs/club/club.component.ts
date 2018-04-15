@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import{MaterialModule} from '../../material.module';
+
+import { FormsModule } from '@angular/forms';
 
 import {ClubService} from  '../share/club.service';
 import {NgForm} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-club',
