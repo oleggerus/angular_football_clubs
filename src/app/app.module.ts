@@ -11,6 +11,7 @@ import { ClubComponent } from './clubs/club/club.component';
 import { ClubsListComponent } from './clubs/clubs-list/clubs-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AboutComponent } from './OtherComponents/about/about.component';
+import { StadiumsComponent } from './OtherComponents/stadiums/stadiums.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AboutComponent } from './OtherComponents/about/about.component';
     ClubsComponent,
     ClubComponent,
     ClubsListComponent,
-    AboutComponent
+    AboutComponent,
+    StadiumsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { AboutComponent } from './OtherComponents/about/about.component';
     RouterModule.forRoot([
       {path: '', component:ClubsComponent},
       {path: 'clubs', component:ClubsComponent},
-      {path:'about', component:AboutComponent}
+      {path:'about', component:AboutComponent},
+      {path:'stadiums', component:StadiumsComponent}
     ])],
   providers: [],
   bootstrap: [AppComponent]
