@@ -1,29 +1,29 @@
 <mat-card>
-<form action="" class="club-form"  #clubForm="ngForm" (ngSubmit)="onSubmit(clubForm)" >
+<form action=""  class="club-form col-md-12"  #clubForm="ngForm" (ngSubmit)="onSubmit(clubForm)" >
 <input type="hidden"  name="ClubId" #ClubId="ngModel" [(ngModel)]="clubService.selectedClub.ClubId">
   <div class="form-row">
-  <div class="form-group row-md-8">
+  <div class="form-group col-md-12">
     <input class="form-control" name="Name" #Name="ngModel" [(ngModel)]="clubService.selectedClub.Name" placeholder="Club name" required>
     <div class="validation-error" *ngIf="Name.invalid && Name.touched">Field is required</div>
 
   </div>
 
-  <div class="form-group row-md-8">
+  <div class="form-group col-md-6">
       <input  class="form-control" name="Year" #Year="ngModel" [(ngModel)]="clubService.selectedClub.Year" placeholder="Club year" required>
       <div class="validation-error" *ngIf="Year.invalid && Year.touched">Field is required</div>
   </div>  
 
-  <div class="form-group row-md-8">
+  <div class="form-group col-md-6">
       <input  class="form-control" name="Owner" #Owner="ngModel" [(ngModel)]="clubService.selectedClub.Owner" placeholder="Club owner" required> 
       <div class="validation-error" *ngIf="Owner.invalid && Owner.touched">Field is required</div>
   </div>
 
-  <div class="form-group row-md-8">
+  <div class="form-group col-md-6">
       <input  class="form-control" name="City" #City="ngModel" [(ngModel)]="clubService.selectedClub.City" placeholder="Club city" required>
       <div class="validation-error" *ngIf="City.invalid && City.touched">Field is required</div>
   </div>
 
-  <div class="form-group row-md-8">
+  <div class="form-group col-md-6">
         <input  class="form-control" name="Country" #Country="ngModel" [(ngModel)]="clubService.selectedClub.Country" placeholder="Club country" required>
         <div class="validation-error" *ngIf="Country.invalid && Country.touched">Field is required</div>
   </div>
