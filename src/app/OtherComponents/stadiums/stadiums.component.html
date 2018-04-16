@@ -1,3 +1,4 @@
+<div style="height: 620px;">
 <div class="slideshow-container">
   <div class="mySlides fade1">
       <div class="my_picture">
@@ -6,19 +7,33 @@
       <div class="text">  <a  [routerLink]="['/counter']"></a></div>
   </div>
 
-  <div class="mySlides fade1">
-      <div class="my_picture">
-         <img src="../../../assets/Images/kyiv.jpg">
-      </div>
-      <div class="text"></div>
-  </div>
 
   <div class="mySlides fade1">
     <div class="my_picture">
-      <img src=".../../../assets/Images/kharkiv.jpg"  >
+       <img src="../../../assets/Images/kyiv.jpg">
     </div>
     <div class="text"></div>
+</div>
+
+<div class="mySlides fade1">
+  <div class="my_picture">
+    <img src=".../../../assets/Images/dnipro.jpg"  >
   </div>
+  <div class="text"></div>
+</div>
+<div class="mySlides fade1">
+  <div class="my_picture">
+     <img src="../../../assets/Images/rivne.jpg">
+  </div>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade1">
+<div class="my_picture">
+  <img src=".../../../assets/Images/kharkiv.jpg"  >
+</div>
+<div class="text"></div>
+</div>
 
   <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
   <a class="next" (click)="plusSlides(1)">&#10095;</a>
@@ -29,4 +44,7 @@
   <span class="dot" (click)="currentSlide(1)"></span>
   <span class="dot" (click)="currentSlide(2)"></span>
   <span class="dot" (click)="currentSlide(3)"></span>
+  <span class="dot" (click)="currentSlide(4)"></span>
+  <span class="dot" (click)="currentSlide(5)"></span>
+</div>
 </div>

@@ -28,7 +28,7 @@ export class StadiumsComponent implements OnInit {
     if (n > slides.length) { this.slideIndex = 1 }
     if (n < 1) {
       this.slideIndex = slides.length;
-      n = 3;
+      n = 5;
     }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
@@ -38,12 +38,6 @@ export class StadiumsComponent implements OnInit {
     }
     slides[this.slideIndex - 1].style.display = "block";
     dots[this.slideIndex - 1].className += " active";
-    if (n > 3) {
-      n = 1;
-      setTimeout(() => { this.showSlides(n + 1);alert("boom"); }, 2000);
-
-    }
-
   }
  
 }
